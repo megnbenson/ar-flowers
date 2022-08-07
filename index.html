@@ -65,11 +65,14 @@
         
         <!-- SpinnySpikyDiscs -->
         <a-asset-item id="flower" src="./models/whiteFlower/whiteFlower.glb"></a-asset-item>
+        <a-asset-item id="bubble" src="./models/BUBBLE.glb"></a-asset-item>
+        <a-asset-item id="bath" src="./models/BATH.glb"></a-asset-item>
 				
       </a-assets>
 
       <a-marker type='pattern' url='./trackers/pattern-flower1.patt'>
-          <a-entity rotation="-90 0 0" >
+          <a-entity  rotation="-90 0 0"  >
+            <a-entity position="0 0 0" >
 
             <a-entity   position="0 -0.5 0" 
             scale="0.09 0.09 0.09"
@@ -77,38 +80,136 @@
             animation-mixer>
             </a-entity>
 
-            <a-entity   position="-0.5 -0.5 0" 
+            <a-entity   position="-0.2 -0.5 0" 
+            rotation="30 0 0"
             scale="0.1 0.1 0.1"
             gltf-model="#flower"
             animation-mixer>
             </a-entity>
 
-            <a-entity   position="-0.9 -0.5 0" 
+            <a-entity   position="0 -0.5 0"
+            rotation="30 180 0" 
+            scale="0.09 0.09 0.09"
+            gltf-model="#flower"
+            animation-mixer>
+            </a-entity>
+
+            <a-entity   position="-0.2 -0.5 0" 
+            rotation="30 180 0"
             scale="0.1 0.1 0.1"
             gltf-model="#flower"
             animation-mixer>
             </a-entity>
 
-            <a-entity   position="0.3 -0.5 0" 
-            scale="0.1 0.1 0.1"
+            <a-entity   position="-0.5 -0.4 0"
+            rotation="30 30 0" 
+            scale="0.05 0.05 0.05"
             gltf-model="#flower"
             animation-mixer>
             </a-entity>
 
-            <a-entity   position="0.5 -0.5 0" 
-            scale="0.1 0.1 0.1"
+            <a-entity   position="-0.8 -0.4 0" 
+            rotation="30 30 0"
+            scale="0.04 0.04 0.04"
             gltf-model="#flower"
             animation-mixer>
             </a-entity>
 
-           
+            <a-entity   position="-0.5 -0.4 0.5"
+            rotation="30 30 0" 
+            scale="0.05 0.05 0.05"
+            gltf-model="#flower"
+            animation-mixer>
+            </a-entity>
+
+            <a-entity   position="-0.8 -0.4 0.5" 
+            rotation="30 30 0"
+            scale="0.04 0.04 0.04"
+            gltf-model="#flower"
+            animation-mixer>
+          </a-entity>
+        
+<!-- regex - l="#flower\.\d\d\d"  scale="1 1 1" -->
+<!-- l="#flower"  scale="0.04 0.04 0.04" -->
+<a-entity id="#flower" gltf-model="#flower"  scale="0.04 0.04 0.04" rotation="30 30 0" position="0.03610524535179138 -0.4 2.735836982727051" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.001" gltf-model="#flower"  rotation="30 30 0"  scale="0.04 0.04 0.04" position="0.21279236674308777 -0.4 2.735836982727051" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.002" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.7244393825531006 -0.4 3.8112595081329346" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.003" gltf-model="#flower"  scale="0.08 0.08 0.08" position="-1.5544047355651855 -0.5 4.020823001861572" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.004" gltf-model="#flower"  scale="0.08 0.08 0.08" position="0.07087154686450958 -0.5 2.3097915649414062" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.005" gltf-model="#flower"   rotation="30 30 0" scale="0.04 0.04 0.04" position="-0.8993774056434631 -0.4 4.153223991394043" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.006" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.7961182594299316 -0.4 3.1002132892608643" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.007" gltf-model="#flower"  rotation="30 30 0"  scale="0.04 0.04 0.04" position="-1.2579822540283203 -0.4 3.1002132892608643" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.008" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.0437641143798828 -0.4 3.5203301906585693" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.009" gltf-model="#flower"  scale="0.08 0.08 0.08" position="1.2871959209442139 -0.5 2.6742560863494873" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.010" gltf-model="#flower"  scale="0.08 0.08 0.08" position="2.395418405532837 -0.5 2.6742560863494873" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.011" gltf-model="#flower"   rotation="30 30 0" scale="0.04 0.04 0.04" position="-2.2801382541656494 -0.4 3.8403897285461426" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.012" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-0.939456045627594 -0.4 2.9743430614471436" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.013" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.798687219619751 -0.4 2.957504987716675" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.014" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-2.0213754177093506 -0.4 3.073547840118408" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.015" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.8121964931488037 -0.4 3.194575309753418" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.016" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-2.063819408416748 -0.4 2.9093756675720215" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.017" gltf-model="#flower"   rotation="30 30 0" scale="0.04 0.04 0.04" position="-0.4887465834617615 -0.4 1.204378366470337" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.018" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-0.7114347815513611 -0.4 1.3204209804534912" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.019" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-0.5022560954093933 -0.4 1.441448450088501" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.020" gltf-model="#flower"  rotation="30 30 0"  scale="0.04 0.04 0.04" position="-1.2261488437652588 -0.4 4.506542682647705" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.021" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.4488372802734375 -0.4 4.622585296630859" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.022" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.2396585941314697 -0.4 4.743613243103027" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.023" gltf-model="#flower"   rotation="30 30 0" scale="0.04 0.04 0.04" position="0.7573310732841492 -0.4 5.113415241241455" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.024" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.7615309357643127 -0.4 4.378170967102051" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.025" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.8576378226280212 -0.4 4.764925003051758" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.026" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.32572484016418457 -0.4 5.469003677368164" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.027" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.2898792624473572 -0.4 5.717541694641113" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.028" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.5102816820144653 -0.4 5.618413925170898" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.029" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.13182304799556732 -0.4 5.656123161315918" visible="true" shadow="cast: false" ></a-entity>
+<!-- <a-entity id="#flower.030" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.9175353050231934 -0.4 5.908840179443359" visible="true" shadow="cast: false" ></a-entity> -->
+<!-- <a-entity id="#flower.031" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.8816895484924316 -0.4 6.157378196716309" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.032" gltf-model="#flower"  scale="0.04 0.04 0.04" position="2.1020922660827637 -0.4 6.05825138092041" visible="true" shadow="cast: false" ></a-entity> -->
+<a-entity id="#flower.033" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.022831678390503 -0.4 0.4707930088043213" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.034" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-0.8355016112327576 -0.4 1.1106295585632324" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.035" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.376206398010254 -0.4 0.967921257019043" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.036" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.3897159099578857 -0.4 1.2049919366836548" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.037" gltf-model="#flower" rotation="30 30 0" scale="0.08 0.08 0.08" position="-1.0263564586639404 -0.5 2.6330013275146484" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.038" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.193979263305664 -0.4 -0.4739718437194824" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.039" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.4166676998138428 -0.4 -0.4579294681549072" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.040" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.7895008325576782 -0.4 0.13290047645568848" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.041" gltf-model="#flower"  scale="0.08 0.08 0.08" position="0.7937005162239075 -0.5 -0.6023430824279785" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.042" gltf-model="#flower"   rotation="30 30 0" scale="0.04 0.04 0.04" position="0.8733357787132263 -0.4 -0.19917559623718262" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.043" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.3578944802284241 -0.4 0.48848915100097656" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.044" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.3220490515232086 -0.4 0.7370274066925049" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.045" gltf-model="#flower"   rotation="30 30 0" scale="0.04 0.04 0.04" position="0.16399267315864563 -0.4 0.6756081581115723" visible="true" shadow="cast: false" ></a-entity> 
+<a-entity id="#flower.046" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.949704885482788 -0.4 0.9283261299133301" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.047" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.9138593673706055 -0.4 1.1768642663955688" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.048" gltf-model="#flower"  scale="0.04 0.04 0.04" position="0.1829133927822113 -0.4 3.9055206775665283" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.049" gltf-model="#flower"  scale="0.08 0.08 0.08" position="0.16075679659843445 -0.5 4.059144973754883" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.050" gltf-model="#flower"  rotation="30 30 0"  scale="0.08 0.08 0.08" position="-1.3616602420806885 -0.5 5.45206880569458" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.051" gltf-model="#flower"  scale="0.04 0.04 0.04" position="-1.3838164806365967 -0.4 5.6056928634643555" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.052" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.5700886249542236 -0.4 3.5875496864318848" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.053" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.5479321479797363 -0.4 3.741173267364502" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.054" gltf-model="#flower"  scale="0.08 0.08 0.08" position="-0.8354139924049377 -0.5 5.5113115310668945" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.055" gltf-model="#flower"  scale="0.08 0.08 0.08" position="1.799431324005127 -0.5 4.37134313583374" visible="true" shadow="cast: false" ></a-entity>
+ <a-entity id="#flower.056" gltf-model="#flower"  rotation="30 30 0"  scale="0.04 0.04 0.04" position="0.2684420943260193 -0.4 4.584231376647949" visible="true" shadow="cast: false" ></a-entity>
+<a-entity id="#flower.057" gltf-model="#flower"  scale="0.04 0.04 0.04" position="1.495725154876709 -0.4 5.670439720153809" visible="true" shadow="cast: false" ></a-entity>
+
+
+            <a-entity   position="0 -0.5 1.7" 
+            rotation="0 180 0"
+            scale="0.15 0.15 0.15"
+            gltf-model="#bath"
+            animation-mixer>
             </a-entity>
 
           </a-entity>
+        </a-entity>
 
+          <!-- <a-marker type='pattern' url='./trackers/pattern-flower1.patt'> -->
+            <!-- <a-entity rotation="-90 0 0" > -->
   
+              
+            <!-- </a-entity> -->
+        <!-- </a-marker> -->
+
          
-       </a-marker>
+      </a-marker>
       
       <a-entity camera></a-entity>
 
